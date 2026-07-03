@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Prediction History</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📊 Prediction History</h1>
+
+<table>
+
+<tr>
+
+<th>Student ID</th>
+
+<th>Name</th>
+
+<th>Department</th>
+
+<th>Prediction</th>
+
+<th>Grade</th>
+
+<th>Action</th>
+
+</tr>
+
+{% for row in rows %}
+
+<tr>
+
+<td>{{ row[1] }}</td>
+
+<td>{{ row[2] }}</td>
+
+<td>{{ row[4] }}</td>
+
+<td>{{ row[10] }}</td>
+
+<td>{{ row[12] }}</td>
+
+<td>
+
+<a href="/profile/{{ row[1] }}">
+
+<button>
+
+View
+
+</button>
+
+</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/">
+<button>⬅ Back to Home</button>
+</a>
+
+</div>
+
+</body>
+</html>

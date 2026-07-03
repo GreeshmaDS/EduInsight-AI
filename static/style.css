@@ -1,0 +1,192 @@
+body{
+    background:#eef2f3;
+    font-family:Arial;
+}
+
+.container{
+
+    width:450px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 15px gray;
+
+}
+
+h1{
+
+text-align:center;
+color:#0066cc;
+
+}
+
+h2{
+
+text-align:center;
+
+}
+
+label{
+
+display:block;
+margin-top:15px;
+
+}
+
+input,select{
+
+width:100%;
+padding:10px;
+margin-top:5px;
+
+}
+
+button{
+
+width:100%;body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+
+    width:700px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 10px 30px rgba(0,0,0,0.3);
+
+}
+
+h1{
+
+    text-align:center;
+    color:#1565c0;
+    font-size:38px;
+    margin-bottom:5px;
+
+}
+
+h2{
+
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+
+}
+
+label{
+
+    display:block;
+    font-weight:bold;
+    margin-top:15px;
+    color:#333;
+
+}
+
+input,select{
+
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+    box-sizing:border-box;
+
+}
+
+input:focus,
+select:focus{
+
+    border:2px solid #2196F3;
+    outline:none;
+
+}
+
+button{
+
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#1565c0;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    background:#0d47a1;
+    transform:scale(1.02);
+
+}
+
+.result{
+
+    margin-top:35px;
+    padding:20px;
+    border-radius:12px;
+    background:#f5f9ff;
+    border-left:6px solid #1565c0;
+
+}
+
+.result h2{
+
+    color:#1565c0;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+table td{
+
+    border:1px solid #ddd;
+    padding:12px;
+    font-size:17px;
+
+}
+
+table tr:nth-child(even){
+
+    background:#f2f2f2;
+
+}
+
+footer{
+
+    text-align:center;
+    color:white;
+    padding:20px;
+    font-size:16px;
+
+}
+padding:12px;
+margin-top:20px;
+background:#0066cc;
+color:white;
+font-size:18px;
+border:none;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#004080;
+
+}

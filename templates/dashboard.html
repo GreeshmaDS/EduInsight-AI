@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EduInsight AI Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🎓 EduInsight AI</h2>
+
+<a href="/">🏠 Home</a>
+
+<a href="/dashboard">📊 Dashboard</a>
+
+<a href="/analytics">📈 Analytics</a>
+
+<a href="/history">📜 History</a>
+
+<a href="/search">🔍 Search</a>
+
+</div>
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<div class="cards">
+
+<div class="card blue">
+
+<h3>Total Students</h3>
+
+<h1>{{ total }}</h1>
+
+</div>
+
+<div class="card green">
+
+<h3>PASS Students</h3>
+
+<h1>{{ pass_count }}</h1>
+
+</div>
+
+<div class="card red">
+
+<h3>FAIL Students</h3>
+
+<h1>{{ fail_count }}</h1>
+
+</div>
+
+<div class="card orange">
+
+<h3>Average Confidence</h3>
+
+<h1>{{ avg_confidence }}%</h1>
+
+</div>
+
+</div>
+
+<h2>Recent Predictions</h2>
+
+<table>
+
+<tr>
+
+<th>Student ID</th>
+
+<th>Name</th>
+
+<th>Prediction</th>
+
+<th>Grade</th>
+
+</tr>
+
+{% for row in rows %}
+
+<tr>
+
+<td>{{ row[1] }}</td>
+
+<td>{{ row[2] }}</td>
+
+<td>{{ row[10] }}</td>
+
+<td>{{ row[12] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<div class="buttons">
+
+<a href="/">
+
+<button>➕ New Prediction</button>
+
+</a>
+
+<a href="/analytics">
+
+<button>📈 Analytics</button>
+
+</a>
+
+<a href="/history">
+
+<button>📜 History</button>
+
+</a>
+
+<a href="/search">
+
+<button>🔍 Search</button>
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Analytics Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🎓 EduInsight AI</h2>
+
+<a href="/">🏠 Home</a>
+
+<a href="/dashboard">📊 Dashboard</a>
+
+<a href="/analytics">📈 Analytics</a>
+
+<a href="/history">📜 History</a>
+
+<a href="/search">🔍 Search</a>
+
+<a href="/logout">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1>📈 Analytics Dashboard</h1>
+
+{% if nodata %}
+
+<h2>No student records found.</h2>
+
+{% else %}
+
+<h2>PASS vs FAIL</h2>
+
+{{ pie|safe }}
+
+<br><br>
+
+<h2>Department Performance</h2>
+
+{{ bar|safe }}
+
+<br><br>
+
+<h2>Grade Distribution</h2>
+
+{{ grade|safe }}
+
+<br><br>
+
+<h2>Attendance vs Final Marks</h2>
+
+{{ attendance|safe }}
+
+<br><br>
+
+<h2>Study Hours vs Final Marks</h2>
+
+{{ study|safe }}
+
+<br><br>
+
+<h2>Prediction Confidence</h2>
+
+{{ confidence|safe }}
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>

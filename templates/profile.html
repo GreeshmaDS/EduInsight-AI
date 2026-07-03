@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Profile</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎓 Student Profile</h1>
+
+<table>
+
+<tr>
+<td><b>Student ID</b></td>
+<td>{{ student[1] }}</td>
+</tr>
+
+<tr>
+<td><b>Student Name</b></td>
+<td>{{ student[2] }}</td>
+</tr>
+
+<tr>
+<td><b>Gender</b></td>
+<td>{{ student[3] }}</td>
+</tr>
+
+<tr>
+<td><b>Department</b></td>
+<td>{{ student[4] }}</td>
+</tr>
+
+<tr>
+<td><b>Attendance</b></td>
+<td>{{ student[5] }}%</td>
+</tr>
+
+<tr>
+<td><b>Study Hours</b></td>
+<td>{{ student[6] }}</td>
+</tr>
+
+<tr>
+<td><b>Internal Marks</b></td>
+<td>{{ student[7] }}</td>
+</tr>
+
+<tr>
+<td><b>Assignment Marks</b></td>
+<td>{{ student[8] }}</td>
+</tr>
+
+<tr>
+<td><b>Final Exam Marks</b></td>
+<td>{{ student[9] }}</td>
+</tr>
+
+<tr>
+<td><b>Prediction</b></td>
+<td>{{ student[10] }}</td>
+</tr>
+
+<tr>
+<td><b>Confidence</b></td>
+<td>{{ student[11] }}%</td>
+</tr>
+
+<tr>
+<td><b>Grade</b></td>
+<td>{{ student[12] }}</td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="/history">
+
+<button>
+
+⬅ Back to History
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

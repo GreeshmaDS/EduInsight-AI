@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Login</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎓 EduInsight AI</h1>
+
+<h2>Teacher Login</h2>
+
+<form method="POST">
+
+<label>Username</label>
+
+<input type="text"
+name="username"
+required>
+
+<label>Password</label>
+
+<input type="password"
+name="password"
+required>
+
+<br><br>
+
+<button type="submit">
+
+Login
+
+</button>
+
+</form>
+
+{% if error %}
+
+<h3 style="color:red;">
+
+{{ error }}
+
+</h3>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
